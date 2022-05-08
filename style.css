@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-    color: white;
+    color: #ffffff;
 }
 
 .dice {
@@ -165,5 +165,21 @@ footer a:hover {
 
     footer a:hover {
         color: #111;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .rules {
+        max-width: 500px;
+    }
+    
+    .wrapper {
+        max-width: 500px;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+
+    .output-container {
+        position: relative;
     }
 }
