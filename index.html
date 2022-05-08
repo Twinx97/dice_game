@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice 55+</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/382e84d0f6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="logo.svg">
+</head>
+<body>
+    <div class="dice">
+        <div class="title">
+            <h1>Dice Game <i class="fa-solid fa-dice"></i></h1>
+        </div>
+        <div class="rules">
+            <h2>Game rules <i class="fa-solid fa-pen-ruler"></i></h2>
+            <p>Roll over 55 to win! Clicking on the "Roll Dice" will generate a random number between 1-100. You have to roll a number over 55 to win..<br><b>Good luck!</b></p>
+        </div>
+        <div class="wrapper">
+            <div class="btn">
+                <button id="btn" onclick="rollDice()">Roll Dice</button>
+            </div>
+            <div class="output-container" id="outputContainer">
+                <h3>Results <i class="fa-solid fa-square-poll-vertical"></i></h3>
+                <p id="output" class="output">Please roll the dice to play</p>
+            </div>
+        </div>
+        <footer>Project created by <a href="https://joonakarhu.com/" target="_blank">Joonatan Karhu</a></footer>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
