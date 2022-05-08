@@ -20,6 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: red;
 }
 
 .title {
@@ -52,24 +53,23 @@ h1 {
 
 button {
     border: none;
-    border: none;
-    padding: 14px 14px;
-    letter-spacing: 1px;
-    line-height: 1.2;
-    color: white;
-    background-color: rgb(28, 28, 28);
+    padding: 1rem 0rem;
+    letter-spacing: 0px;
+    color: black;
+    background-color: rgb(255, 255, 255);
     height: auto;
     width: 100px;
-    font-size: 1.4rem;
-    border-radius: 8px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    font-weight: bolder;
 }
 
 button:hover {
-    background-color: white;
-    color: rgb(28, 28, 28);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 
 .rules {
@@ -97,10 +97,12 @@ button:hover {
     border: 1px solid rgba(78, 78, 78, 0.256);
     padding: 1rem;
     border-radius: 8px;
+    background-color: white;
 }
 
 .output-container p {
     margin-top: 6px;
+    padding: 5px;
 }
 
 .output-container h3 {
@@ -110,15 +112,14 @@ button:hover {
 footer {
     padding: 2rem;
     text-align: center;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     margin-top: 2rem;
-    color: white;
 }
 
 footer a:hover {
     pointer: cursor;
-    color: white;
+    color: #111;
 }
 
 @media screen and (max-width: 500px) {
@@ -130,17 +131,23 @@ footer a:hover {
 
     button {
         font-size: 0.9rem;
+        font-weight: bold;
     }
+
+
 
     .rules {
         width: 100%;
         padding: 1rem;
         margin: 0;
         background-color: rgb(255 255 255);
+        border-radius: 0;
+        box-shadow: none;
     }
 
     .title {
-        background-color: whitesmoke;
+        background-color: white;
+        box-shadow: none;
     }
 
     .wrapper {
@@ -148,6 +155,15 @@ footer a:hover {
     }
 
     footer a {
-        color: blue;
+        color: black;
+        font-weight: bold;
+    }
+
+    footer a:active {
+        color: black;
+    }
+
+    footer a:hover {
+        color: #111;
     }
 }
