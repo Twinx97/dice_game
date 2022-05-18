@@ -3,7 +3,8 @@ const output = document.getElementById('output');
 const btn = document.getElementById('btn');
 
 function rollDice() {
-    let number = Math.floor(Math.random() * 100)
+    let number = Math.round(Math.random() * 100)
+    console.log(number);
     if(number > 55) {
         output.style.color = 'green';
         output.innerHTML = `You roll a (${number}), YOU WIN!`;
